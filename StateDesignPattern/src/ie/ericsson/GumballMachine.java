@@ -1,5 +1,7 @@
 package ie.ericsson;
 
+import ie.ericsson.states.*;
+
 /**
  * Created by smcgrath on 28/09/2017.
  */
@@ -11,6 +13,11 @@ public class GumballMachine {
     State winnerState;
 
     State state;
+
+    public int getCount() {
+        return count;
+    }
+
     int count;
 
     public GumballMachine(int numberGumballs){
@@ -40,6 +47,12 @@ public class GumballMachine {
         state.dispense();
     }
 
+    public void releaseState(){
+        System.out.println("A gumball comes rolling out of the slot..");
+        if(count != 0){
+            count = count -1;
+        }
+    }
     //===========getters and setters=================//
     public State getSoldState() {
         return soldState;
@@ -84,4 +97,5 @@ public class GumballMachine {
     public void setState(State state) {
         this.state = state;
     }
+
 }

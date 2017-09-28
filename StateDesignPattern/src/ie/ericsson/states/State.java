@@ -1,4 +1,4 @@
-package ie.ericsson;
+package ie.ericsson.states;
 
 /**
  * Created by smcgrath on 28/09/2017.
