@@ -1,6 +1,4 @@
-package ie.ericsson.states;
-
-import ie.ericsson.GumballMachine;
+package ie.ericsson;
 
 import java.util.Random;
 

@@ -1,6 +1,4 @@
-package ie.ericsson.states;
-
-import ie.ericsson.GumballMachine;
+package ie.ericsson;
 
 /**
  * Created by smcgrath on 28/09/2017.
