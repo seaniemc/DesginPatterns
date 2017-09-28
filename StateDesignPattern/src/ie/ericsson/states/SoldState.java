@@ -29,7 +29,7 @@ public class SoldState implements State {
 
     @Override
     public void dispense() {
-        gumballMachine.releaseState();
+        gumballMachine.releaseBall();
         if (gumballMachine.getCount() > 0){
             gumballMachine.setState(gumballMachine.getNoQuarterState());
         }else{

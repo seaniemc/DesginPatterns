@@ -47,7 +47,7 @@ public class GumballMachine {
         state.dispense();
     }
 
-    public void releaseState(){
+    public void releaseBall(){
         System.out.println("A gumball comes rolling out of the slot..");
         if(count != 0){
             count = count -1;
